@@ -1,5 +1,6 @@
 package com.squvao.locanalyser;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -11,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
@@ -59,6 +61,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) { //обрабатывающий метод (выполняется тогда, когда пользователь выбрал эллемент меню)
                 drawerLayout.closeDrawers(); // закрывает полку
+                int id = item.getItemId();
+                switch (id){
+                    case R.id.sub_menu_navigation_view_about_us:
+                        Intent intent = new Intent(MainActivity.this,AboutUsActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.menu_navigation_view_help:
+                        Toast.makeText(MainActivity.this, "Вы нажали на Help", Toast.LENGTH_SHORT).show();
+                        break;
+                }
                 return true;
             }
         });
