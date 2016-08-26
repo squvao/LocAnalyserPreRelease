@@ -8,4 +8,6 @@
     <string name="sub_menu_navigation_view_about_us">About us</string>
     <string name="action_bar_drawer_toggle_open">Open</string>
     <string name="action_bar_drawer_toggle_close">Close</string>
+    <string name="content_main_text_view_larwg">Location Analyser Real World Game</string>
+    <string name="menu_navigation_view_settings">Settings</string>
 </resources>

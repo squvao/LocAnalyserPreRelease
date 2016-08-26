@@ -10,6 +10,10 @@
             android:title="@string/menu_navigation_view_feedback"
             android:id="@+id/menu_navigation_view_feedback"
             android:icon="@drawable/ic_email_open"/>
+        <item
+            android:title="@string/menu_navigation_view_settings"
+            android:id="@+id/menu_navigation_view_settings"
+            android:icon="@drawable/ic_settings"></item>
     </group>
     <item android:title="@string/sub_menu_navigation_view_more">
         <menu>
