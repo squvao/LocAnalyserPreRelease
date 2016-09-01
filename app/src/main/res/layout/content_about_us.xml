@@ -11,6 +11,41 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.squvao.locanalyser.AboutUsActivity"
     tools:showIn="@layout/activity_about_us"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimaryDark">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="175dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/content_about_us_app_name"
+        style="@style/TextAppearance.AppCompat.Large"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content_about_us_text_version"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/content_about_us_app_name"
+        android:id="@+id/content_about_us_version"
+        android:textColor="#FFAB91"
+        style="@style/TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content_about_us_text_copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/content_about_us_version"
+        android:id="@+id/content_about_us_copyright"
+        android:textColor="#FFAB91"
+        style="@style/TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content_about_us_text_rights"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/content_about_us_copyright"
+        android:textColor="#FFAB91"
+        style="@style/TextAppearance.AppCompat.Medium"/>
 
 </RelativeLayout>

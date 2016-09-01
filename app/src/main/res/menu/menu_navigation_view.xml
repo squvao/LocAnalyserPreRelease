@@ -13,7 +13,7 @@
         <item
             android:title="@string/menu_navigation_view_settings"
             android:id="@+id/menu_navigation_view_settings"
-            android:icon="@drawable/ic_settings"></item>
+            android:icon="@drawable/ic_settings"/>
     </group>
     <item android:title="@string/sub_menu_navigation_view_more">
         <menu>

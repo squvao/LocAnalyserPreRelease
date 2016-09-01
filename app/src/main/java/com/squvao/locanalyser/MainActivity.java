@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ShareCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -69,6 +70,14 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.menu_navigation_view_help:
                         Toast.makeText(MainActivity.this, "Вы нажали на Help", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.menu_navigation_view_feedback:
+                        ShareCompat.IntentBuilder.from(MainActivity.this).setType("message/rfc822")
+                                .addEmailTo(getString(R.string.main_activity_navigation_item_feedback_email))
+                                .setSubject(getString(R.string.app_name))
+                                .setText(getString(R.string.main_activity_navigation_item_feedback_message))
+                                .setChooserTitle(getString(R.string.main_activity_navigation_item_feedback_title))
+                                .startChooser();
                         break;
                 }
                 return true;
