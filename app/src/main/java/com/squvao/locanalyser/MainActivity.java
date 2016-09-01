@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case R.id.menu_navigation_view_help:
-                        Toast.makeText(MainActivity.this, "Вы нажали на Help", Toast.LENGTH_SHORT).show();
+                        Intent intent2 = new Intent(MainActivity.this,HelpActivity.class);
+                        startActivity(intent2);
                         break;
                     case R.id.menu_navigation_view_feedback:
                         ShareCompat.IntentBuilder.from(MainActivity.this).setType("message/rfc822")
@@ -78,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
                                 .setText(getString(R.string.main_activity_navigation_item_feedback_message))
                                 .setChooserTitle(getString(R.string.main_activity_navigation_item_feedback_title))
                                 .startChooser();
+                        break;
+                    case R.id.menu_navigation_view_settings:
+                        Intent intent1 = new Intent(MainActivity.this,SettingsActivity.class);
+                        startActivity(intent1);
                         break;
                 }
                 return true;
