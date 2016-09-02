@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonStyle">@style/ButtonTheme</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,5 +17,14 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Default button styles-->
+
+    <style name="ButtonTheme" parent="android:Widget.Button">
+        <item name="android:minHeight">41dp</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@drawable/button_theme_background</item>
+    </style>
 
 </resources>

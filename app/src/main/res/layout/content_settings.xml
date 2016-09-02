@@ -1,15 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.squvao.locanalyser.SettingsActivity"
     tools:showIn="@layout/activity_settings">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    style="@style/TextAppearance.AppCompat.Large"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/content_settings_button_more_information"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
-</RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_navigation_view_settings"
+                        android:textColor="?attr/colorPrimary"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        style="@style/Base.TextAppearance.AppCompat.Small" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_settings_button_common"
+                        android:drawableLeft="@drawable/ic_format_list_bulleted"
+                        android:gravity="left|center_vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_settings_button_notifications"
+                        android:drawableLeft="@drawable/ic_bell"
+                        android:gravity="left|center_vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_settings_button_account"
+                        android:drawableLeft="@drawable/ic_account_box_outline"
+                        android:gravity="left|center_vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_settings_button_reset_settings"
+                        android:drawableLeft="@drawable/ic_sync"
+                        android:gravity="left|center_vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"/>
+                </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/content_settings_about"
+                    android:textColor="?attr/colorPrimary"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    style="@style/Base.TextAppearance.AppCompat.Small" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_menu_navigation_view_about_us"
+                    android:drawableLeft="@drawable/ic_account_box_dark"
+                    android:gravity="left|center_vertical"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_menu_navigation_view_contact_author"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:gravity="left|center_vertical"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
