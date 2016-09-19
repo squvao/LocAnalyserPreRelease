@@ -150,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
 
     /*
     Обработка пунктов меню в зависимости от id
+
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
